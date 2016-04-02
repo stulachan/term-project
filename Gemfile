@@ -3,8 +3,18 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
+
 # Use mysql as the database for Active Record
+
+group :production do
+	gem 'pg'
+
+end
+
+group :development do
 gem 'mysql2', '>= 0.3.13', '< 0.5'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
