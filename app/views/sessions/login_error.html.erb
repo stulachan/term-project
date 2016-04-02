@@ -1,0 +1,45 @@
+<!--<p>User name or password mismatch! Please try again!</p>-->
+
+
+
+<head>
+
+
+<title>Error</title>
+<meta charset="utf-8" name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" type="text/css" href="/~stulacha/poker/app/assets/stylesheets/welcome.scss" />
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+
+$(function() {
+$( "#dialog" ).dialog();
+});
+</script>
+</head>
+
+
+<body>
+<div class ="navbar navbar-inverse navbar-static-top">
+	
+	                        <ul class= "nav navbar-nav navbar-right">
+                                                    
+                            
+                            <li><a href="login"><strong>Login</strong></a></li>
+                            <li><a href="users/new"><strong>Register</strong></a></li>
+                        
+                          </ul><!-- /.nav -->
+</div>
+
+<div id="dialog" align="center" title="Login Failed" >
+<strong>
+<font color="red">User name or password is invalid! Please try again!.</font> </strong>
+<%= link_to 'Back', root_url %>
+</div>
+
+
+

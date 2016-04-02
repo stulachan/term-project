@@ -1,0 +1,67 @@
+
+<head>
+<meta name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" type="text/css" href="/~stulacha/poker/app/assets/stylesheets/welcome.scss" />
+</head>
+
+<div class ="navbar navbar-inverse navbar-static-top">
+    
+                            <ul class= "nav navbar-nav navbar-right">
+                                                    
+                            
+                            <li><a href="../login"><strong>Login</strong></a></li>
+                            
+                        
+                          </ul><!-- /.nav -->
+</div>
+
+<div class="container">
+    <section id="content">
+        
+            <h1>Register</h1>
+
+ <div><%= render 'form' %></div>
+
+
+ <div>
+     <input type = "checkbox" name = "chkbox" value = "agree" required=""/>&nbspI Agree to the (Privacy Policy)
+                                                              
+ </div>
+
+</section>
+
+</div>
+
+
+
+
+<footer >
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+           
+           <div class="col-md-4" >
+           <br>
+            <font color="blue">Copyright &copy; 2016 CSC 667 Group # 4 </font>
+            </br>
+            </div>
+
+            <div class="col-md-8">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    		<%= link_to "Home", home_path %>
+                    <!--<a href="../welcome/index">Home</a>-->
+                    </li>
+                    <li><a data-popup-open="#" href= "#">Terms &amp; Conditions</a></li>
+                    <li><a data-popup-open="#" href="#">Privacy Policy</a></li>
+                    <li><a data-popup-open="#" href="#">About Us</a></li>
+                </ul><!-- /.nav -->
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+
+

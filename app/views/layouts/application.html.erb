@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poker</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<div id="user_header" align="center">
+	 <% if current_user %>
+
+	 	
+	 	Logged in as <%= current_user.email %> 
+
+
+	 	<% end %>
+	</div>
+	
+	
+	<% flash.each do |key, value| %>
+	<%= content_tag(:div, class:"alert alert-#{key}") do %>
+		<p> <%= value %> </p>
+
+		<% end %>
+
+		<% end %>
+
+
+<%= yield %>
+
+</body>
+</html>
