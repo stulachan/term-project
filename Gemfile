@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
 
-ruby '1.9.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 
 # Use mysql as the database for Active Record
 
-group :production do
-	gem 'pg' 
+#group :production do
+gem 'pg' 
 
-end
+#end
 
-group :development do
-gem 'mysql2', '>= 0.3.13', '< 0.5'
-end
+#group :development do
+####gem 'mysql2', '>= 0.3.13', '< 0.5'
+#end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -55,7 +55,4 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-gem 'rails_12factor', group: :production
-gem 'heroku'
-gem 'net-ssh', '~> 2.0'
 

@@ -9,13 +9,14 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 # mysql2
+# postgresql
 default: &default
-  adapter:  postgresql
+  adapter:  mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: fish2016
-  socket: /var/run/mysqld/mysqld.sock
+  #username: root
+  #password: fish2016
+  #socket: /var/run/mysqld/mysqld.sock
 
 development:
  <<: *default
@@ -44,12 +45,11 @@ test:
 #
 # You can use this database configuration with:
 #
-production:
-url: <%= ENV['DATABASE_URL'] %>
+###production:
+###url: <%= ENV['DATABASE_URL'] %>
 #
-#production:
-  
-  #<<: *default
-  #database: poker_production
-  #username: poker
-  #password: <%= ENV['POKER_DATABASE_PASSWORD'] %>
+production:
+  <<: *default
+  database: poker_production
+  username: poker
+  password: <%= ENV['POKER_DATABASE_PASSWORD'] %>
