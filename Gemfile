@@ -57,4 +57,5 @@ group :development do
 end
 gem 'rails_12factor', group: :production
 gem 'heroku'
+gem 'net-ssh', '~> 2.0'
 
