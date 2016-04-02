@@ -44,11 +44,18 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+# production:
+# url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: poker_production
-  username: poker
-  password: <%= ENV['POKER_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: utf8
+  database: poker_development
+  pool: 5
+  username: stulachan90@gmail.com
+  password:
+
+  #<<: *default
+  #database: poker_production
+  #username: poker
+  #password: <%= ENV['POKER_DATABASE_PASSWORD'] %>
